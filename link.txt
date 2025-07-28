@@ -1,0 +1,6 @@
+Link practice:
+https://aistudio.google.com/prompts/1Iie8Wr0f-i8Dqpe8Ce2ADLB9hyvpRRjf
+
+Link thư viện: 
+https://github.com/haodpsut/StarPerf_Simulator
+https://github.com/SpaceNetLab/StarPerf_Simulator
