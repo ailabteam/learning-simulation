@@ -1,18 +1,27 @@
 """
-My custom test file
+======================================================================
+My Test Runner - Focused on Fault Tolerance
+======================================================================
+This script isolates and runs the test case for natural satellite
+failures in the +Grid mode to analyze its behavior.
 """
+
 def main():
-    print("--- My Custom Test Runner ---")
+    print("--- Running Fault Tolerance Test ---")
+    print("======================================================================")
 
-    # Chỉ chạy bài test 16
-    print("\t\t\033[31mRunning ONLY Test(16) : calculate the least hop path route in +Grid mode\033[0m")
-    # minimum hop count routing in +Grid mode
-    import samples.XML_constellation.positive_Grid.least_hop_path as POSITIVE_GRID_LEAST_HOP_PATH_ROUTING_TEST
-    POSITIVE_GRID_LEAST_HOP_PATH_ROUTING_TEST.least_hop_path()
+    # We are running Test(12/16) from the original test suite.
+    print("\t\t\033[31mRunning ONLY: Natural satellite damage in +Grid mode\033[0m")
+    
+    # Import the specific test script
+    import samples.XML_constellation.positive_Grid.natural_failure_satellites as FaultToleranceTest
+    
+    # Execute the function within that script
+    FaultToleranceTest.natural_failure_satellites()
 
-    print("--- End of Custom Test ---")
+    print("======================================================================")
+    print("--- End of Test ---")
 
-# This part remains the same
+
 if __name__ == "__main__":
     main()
-
